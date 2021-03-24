@@ -12,7 +12,8 @@ const {
             message,
             code
         }
-    }
+    },
+    ErrorHandler
 } = require('../errors');
 
 module.exports = {

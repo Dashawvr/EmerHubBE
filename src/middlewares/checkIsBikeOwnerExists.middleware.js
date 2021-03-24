@@ -19,7 +19,9 @@ const {
 const { bikeOwnerService } = require('../services');
 
 module.exports =  async (req, res, next) => {
+
     try {
+
         const {bikeOwner_id} = req.body.bikeOwner_id ? req.body : req.params;
 
         if (!bikeOwner_id) {

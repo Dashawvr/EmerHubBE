@@ -13,6 +13,7 @@ const {
 const {ErrorHandler} = require('../errors');
 
 module.exports = (req, res, next) => {
+
     const bike = req.body;
 
     const {error} = createBikeValidator.validate(bike);

@@ -8,7 +8,6 @@ const {
 } = require('../models');
 
 module.exports = () => {
-
     BikeOwnerModel.hasMany(ReportModel, {foreignKey: 'bikeOwner_id'});
     BikeOwnerModel.hasMany(BikeModel, {foreignKey: 'bikeOwner_id'});
 
